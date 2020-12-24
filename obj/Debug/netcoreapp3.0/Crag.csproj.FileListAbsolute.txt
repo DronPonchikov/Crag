@@ -1,0 +1,11 @@
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.exe
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.deps.json
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.runtimeconfig.json
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.runtimeconfig.dev.json
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.dll
+D:\Visual C#\Crag\bin\Debug\netcoreapp3.0\Crag.pdb
+D:\Visual C#\Crag\obj\Debug\netcoreapp3.0\Crag.csprojAssemblyReference.cache
+D:\Visual C#\Crag\obj\Debug\netcoreapp3.0\Crag.AssemblyInfoInputs.cache
+D:\Visual C#\Crag\obj\Debug\netcoreapp3.0\Crag.AssemblyInfo.cs
+D:\Visual C#\Crag\obj\Debug\netcoreapp3.0\Crag.dll
+D:\Visual C#\Crag\obj\Debug\netcoreapp3.0\Crag.pdb
