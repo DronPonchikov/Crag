@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Visual C#\\Crag\\Crag.csproj": {}
+    "D:\\VisualC\\Crag\\Crag.csproj": {}
   },
   "projects": {
-    "D:\\Visual C#\\Crag\\Crag.csproj": {
+    "D:\\VisualC\\Crag\\Crag.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Visual C#\\Crag\\Crag.csproj",
+        "projectUniqueName": "D:\\VisualC\\Crag\\Crag.csproj",
         "projectName": "Crag",
-        "projectPath": "D:\\Visual C#\\Crag\\Crag.csproj",
+        "projectPath": "D:\\VisualC\\Crag\\Crag.csproj",
         "packagesPath": "C:\\Users\\Andrew\\.nuget\\packages\\",
-        "outputPath": "D:\\Visual C#\\Crag\\obj\\",
+        "outputPath": "D:\\VisualC\\Crag\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"

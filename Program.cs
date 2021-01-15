@@ -183,10 +183,14 @@ namespace Crag
     class Program
     {
         public static int[] dice_values = new int[3];
-        public static List<string> categoryVocabular = new List<string>(13) { "1", "2", "3", "4", "5", "6", "13", "even", "odd", "low", "high", "same", "crag" }; // make list of names, if name doesn't exist -- error message
-        //public static string[] previousCategories = new string [13];
+        public static List<string> categoryVocabular = new List<string>(13) { "1", "2", "3", "4", "5", "6", "13", "even", "odd", "low", "high", "same", "crag" };
+        
         static void Main(string[] args)
         {
+           
+
+            Console.WindowHeight = Console.LargestWindowHeight;
+            Console.WindowWidth = Console.LargestWindowWidth;
             int round = 0;
 
             Dice dice1 = new Dice(15, 15);
@@ -195,30 +199,18 @@ namespace Crag
             while (round != 13)
             {
                 ShowInfo();
-
-
                 dice_values[0] = dice1.ThrowDice();
-
                 dice1.PrintDice();
                 dice_values[1] = dice2.ThrowDice();
-
                 dice2.PrintDice();
                 dice_values[2] = dice3.ThrowDice();
-
                 dice3.PrintDice();
-
                 Reroll(dice1, dice2, dice3);
-
-
                 CategoryChecker();
-
-
                 Thread.Sleep(2000);
                 round++;
                 Console.Clear();
-
-                ShowInfo();
-
+                
             }
 
 
@@ -269,21 +261,25 @@ namespace Crag
 
         }
 
-        private static void CategoryChecker() // make protection, only once category can be taken from list
+        private static void CategoryChecker() // make protection, categories which are not in list can't be taken, other can be  
         {
             string category;
+
             Console.SetCursorPosition(15, 13);
 
             Console.BackgroundColor = ConsoleColor.Red;
             Console.WriteLine("Choose the category of counting");
             Console.BackgroundColor = ConsoleColor.Black;
-            category = Console.ReadLine().ToLower();
-            while (categoryVocabular.Contains(category))
+            do
             {
-
-
-
-
+                category = Console.ReadLine().ToLower();
+            } while (!categoryVocabular.Contains(category));
+            //category = Console.ReadLine().ToLower();
+            //while (categoryVocabular.Contains(category))
+            //{
+                //do
+                //{
+                //category = Console.ReadLine().ToLower();
                 if (categoryVocabular.Contains(category))
                 {
 
@@ -448,6 +444,7 @@ namespace Crag
                             }
 
                             break;
+                          
 
                     }
 
@@ -455,8 +452,27 @@ namespace Crag
                     categoryVocabular.Remove(category);
 
                 }
+                else
+                {
+                    Console.WriteLine("Vi petuk, enter right val");
+                    while (!categoryVocabular.Contains(category))
+                    {
+                        category = Console.ReadLine();
+                    }
+                    
+                    
+                }
 
-            }
+
+               // categoryVocabular.Remove(category);
+            //} while (categoryVocabular.Contains(category));
+               
+
+                
+
+                //}
+
+            
 
 
 
