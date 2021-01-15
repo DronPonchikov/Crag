@@ -187,8 +187,6 @@ namespace Crag
         
         static void Main(string[] args)
         {
-           
-
             Console.WindowHeight = Console.LargestWindowHeight;
             Console.WindowWidth = Console.LargestWindowWidth;
             int round = 0;
@@ -261,7 +259,7 @@ namespace Crag
 
         }
 
-        private static void CategoryChecker() // make protection, categories which are not in list can't be taken, other can be  
+        private static void CategoryChecker() 
         {
             string category;
 
@@ -273,13 +271,7 @@ namespace Crag
             do
             {
                 category = Console.ReadLine().ToLower();
-            } while (!categoryVocabular.Contains(category));
-            //category = Console.ReadLine().ToLower();
-            //while (categoryVocabular.Contains(category))
-            //{
-                //do
-                //{
-                //category = Console.ReadLine().ToLower();
+            } while (!categoryVocabular.Contains(category));          
                 if (categoryVocabular.Contains(category))
                 {
 
@@ -452,33 +444,7 @@ namespace Crag
                     categoryVocabular.Remove(category);
 
                 }
-                else
-                {
-                    Console.WriteLine("Vi petuk, enter right val");
-                    while (!categoryVocabular.Contains(category))
-                    {
-                        category = Console.ReadLine();
-                    }
-                    
-                    
-                }
-
-
-               // categoryVocabular.Remove(category);
-            //} while (categoryVocabular.Contains(category));
-               
-
-                
-
-                //}
-
-            
-
-
-
-
-
-
+              
 
         }
 
